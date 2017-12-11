@@ -1,0 +1,39 @@
+https://docs.google.com/document/d/1k7rQdcvHwZZTC-wdU0C4DgRtJ_tpYgQ5Z_jTVYrSbPg/edit?usp=sharing
+
+Feature Request
+
+Objective
+
+	To give users the ability to press enter to search the spotify library.
+
+Background
+
+	Jammming currently supports the ability to search for songs, artists and albums by clicking on the on screen search button.
+	With over 30 million Spotify users as of 2016 this would be a great functionality to implement. Smartphones and mobile devices have become more 
+	popular than Desktop Computers. Even so Desktop computers with an Enter key on the keyboard have 45% of the marketshare worldwide. Implementing
+	an enter key press to conduct a search is currently used by many successful technology companies from Facebook, Google, Firefox and LinkedIn in their
+	search engines.
+
+This feature would:
+	Create a greater ease of access
+
+	Allow a user to type in the search term and quickly press the enter key rather than taking the hands off
+	the keyboard and navigate the mouse and mouse cursor over the Search button on screen.
+
+Technical Design
+
+	Wrap SearchBars renders input method in a form tag
+
+		Currently in the searchbar component there is only an input tag with the onChange
+		method as well as the "a" tag button with the search method.
+
+		The input tag and the clickable a tag button should be wrapped in a form tag. This
+		type of form submit with the two methods work where its a button instead of an "a" tag css button.
+		Some experimentation and tweaking would be necessary to assay if both methods would work with the current "a" tag.
+		The search method should be moved inside the form tag.
+
+Caveat
+		The search button displayed on screen should still work. It would be desired to make sure that both methods(Enter key press and on screen button) 
+		function and conduct the search method.
+
+		The search should only be conducted if characters are valid and if characters are entered.
